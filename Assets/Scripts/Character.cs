@@ -78,7 +78,7 @@ public class Character
         return _crit + _equipItem.crit;
     }
 
-    public void SetInventory(ItemData items)
+    public void SetInventory(ItemData items)  //인벤토리를 ItemData로 초기화
     {
         foreach (Item i in items.items)
         {
@@ -87,19 +87,18 @@ public class Character
         lastCell = items.items.Length;
     }
 
-    public void Additem(Item item)
+    public void Additem(Item item)  //인벤토리에 아이템 추가, 지금 과제에선 안씀
     {
         _inventory[lastCell] = item;
         lastCell++;
     }
 
-    public void Equip(int i)
+    public void Equip(int i)  //장착한 아이템 데이터 초기화(캐릭터 Stat을 반환할 때 사용)
     {
         _equipItem = _inventory[i];
-        Debug.Log(i);
     }
 
-    public void UnEquip()
+    public void UnEquip()  //아이템 미장착 상태로 만들기, 지금 과제에선 안씀
     {
         _equipItem = null;
     }

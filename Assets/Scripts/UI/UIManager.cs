@@ -27,7 +27,7 @@ public class UIManager : MonoBehaviour
         Refresh();
     }
 
-    public void Refresh()
+    public void Refresh()   //UI에 나와있는 레벨, 골드 표기 초기화
     {
         name.text = GameManager.Instance.GetCharacter().Name;
         level.text = "Level: " + GameManager.Instance.GetCharacter().Level;
@@ -37,7 +37,7 @@ public class UIManager : MonoBehaviour
     }
 
 
-    public void OnOff(int i)
+    public void OnOff(int i)    //UI 화면 전환
     {
         switch (i)
         {

@@ -23,7 +23,7 @@ public class UIStatus : MonoBehaviour
     }
 
 
-    public void Refresh()
+    public void Refresh()  //UI에 뜬 능력치 글자 초기화
     {
         atk.text = "Atk: " + GameManager.Instance.GetCharacter().FixedAtk();
         def.text = "Def: " + GameManager.Instance.GetCharacter().FixedDef();

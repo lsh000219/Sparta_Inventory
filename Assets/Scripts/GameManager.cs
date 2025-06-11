@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
         return _character;
     }
 
-    public void SetData()
+    public void SetData()  //인벤토리를 ItemData로 초기화
     {
         _character.SetInventory(itemData);
     }
